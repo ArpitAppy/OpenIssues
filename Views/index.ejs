@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>GitHub Repos Open Issues Analysis</title>
+        <link rel="stylesheet" href="/CSS/style.css" />
+    </head>
+    <body>
+        <p> Please Enter any GitHub Repository Link</p>
+        <form action="/" method="POST">
+            <input type="text" id="githuburl" size="40" placeholder="Enter GitHub Repository Link" name="githuburl" />
+            <input type="submit" id="submit" value="Submit Repos" onclick="gitUrl();" />
+        </form>
+        <br />
+        <p>Check the Below table for Open Issues of GitHub Repository : <b><div id="githUrl"></div></b></p>
+        <table border="1">
+            <thead>
+            <tr>
+                <th>
+                    Number of Open Issues
+                </th>
+                <th>
+                    Count
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Issues Total
+                </td>
+                <td>
+                    <b> <%= totalCount %></b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Issues opened in last 24 Hrs
+                </td>
+                <td>
+                    <b> <%= count24Hrs %></b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Issues opened more than 24 Hrs ago but less than 7 days ago
+                </td>
+                <td>
+                    <b> <%= count1to7Days %></b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     Issues opened more than 7 days ago
+                </td>
+                <td>
+                    <b> <%= countMoreThan7Days %></b>
+                </td>
+            </tr>
+        </tbody>    
+        </table>
+        <script>
+            function gitUrl(){
+                const ghurl =  document.getElementById('githuburl').value;
+                document.getElementById('githUrl').innerHTML = ghurl;
+            }
+        </script>   
+    </body>
+</html>

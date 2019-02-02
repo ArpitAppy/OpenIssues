@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+    margin-top: 50px;
+    background-color: beige;
+    color: #000000;
+}
+
+table{
+    float: right;
+    margin-right: 450px;
+    background-color: aliceblue
+}
+
+input {
+    border-radius: 5px;  
+    padding: 5px;  
+}
