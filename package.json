@@ -2,12 +2,20 @@
   "name": "openissuescount",
   "version": "1.0.0",
   "description": "Open Issues Analysis",
+  "engines": {
+    "node": "10.x"
+  },
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "node test.js"
   },
   "author": "Arpit",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArpitAppy/OpenIssues"
+  },
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
