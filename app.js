@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+const path = require('path');
 var port = process.env.PORT || 8080;
 var bodyParser = require('body-parser');
 app.use(bodyParser.json());
@@ -9,7 +10,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('Public'));
 
 // EJS engine and index file variables
-app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'))
+app.set('view engine', 'ejs')
 app.get('/', function (req, res){
     res.render('index', {
         totalCount: 0,
