@@ -8,7 +8,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "node test.js"
+    "test": "node app.js"
   },
   "author": "Arpit",
   "license": "ISC",
