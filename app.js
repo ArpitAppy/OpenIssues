@@ -11,7 +11,7 @@ app.use(express.static('Public'));
 // EJS engine and index file variables
 app.set('view engine', 'ejs');
 app.get('/', function (req, res){
-    res.render('index', {
+    res.render('./index', {
         totalCount: 0,
         count24Hrs: 0,
         count1to7Days: 0, 
