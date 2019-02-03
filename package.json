@@ -1,12 +1,12 @@
 {
-  "name": "radiusagentassignment",
+  "name": "openissuescount",
   "version": "1.0.0",
-  "description": "Radus Agent Assignment",
+  "description": "Open Issues Analysis",
   "main": "index.js",
   "scripts": {
     "start": "node app.js"
   },
-  "author": "",
+  "author": "Arpit",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
