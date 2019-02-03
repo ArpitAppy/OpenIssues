@@ -13,7 +13,7 @@ app.use(express.static('Public'));
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 app.get('/', function (req, res){
-    res.render('index', {
+    res.render('index.ejs', {
         totalCount: 0,
         count24Hrs: 0,
         count1to7Days: 0, 
