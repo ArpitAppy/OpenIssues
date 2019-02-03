@@ -10,7 +10,6 @@ app.use(express.static('Public'));
 
 // EJS engine and index file variables
 app.set('view engine', 'ejs');
-app.set('Views', __dirname);
 app.get('/', function (req, res){
     res.render('index', {
         totalCount: 0,
