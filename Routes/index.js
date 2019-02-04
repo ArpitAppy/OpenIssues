@@ -38,7 +38,7 @@ router.post("/", (req, res) => {
     .then(axios.spread(function(totalCountResponse, Last24HrsResponse, OneTo7DaysResponse){
         var OneToSevenDaysResponse = (OneTo7DaysResponse.data.length - Last24HrsResponse.data.length);
         var MoreThan7DaysResponse = (totalCountResponse.data.open_issues_count - OneTo7DaysResponse.data.length);
-        res.render('./index', {totalCount:totalCountResponse.data.open_issues_count, count24Hrs:Last24HrsResponse.data.length, count1to7Days: OneToSevenDaysResponse, countMoreThan7Days: MoreThan7DaysResponse });
+        res.render('./index.html', {totalCount:totalCountResponse.data.open_issues_count, count24Hrs:Last24HrsResponse.data.length, count1to7Days: OneToSevenDaysResponse, countMoreThan7Days: MoreThan7DaysResponse });
     }) 
     ) .catch(function(error){
         console.error(error);

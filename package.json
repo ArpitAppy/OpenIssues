@@ -21,6 +21,7 @@
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
+    "express-es6-template-engine": "^2.1.7",
     "split-string": "^6.0.0"
   }
 }

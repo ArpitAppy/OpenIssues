@@ -17,4 +17,4 @@ Output:
 Table with the count of open issues for the particular time range.
 
 Note you may find the application running on the below link:
-https://obscure-lowlands-25473.herokuapp.com/
+https://sheltered-beyond-70033.herokuapp.com/
